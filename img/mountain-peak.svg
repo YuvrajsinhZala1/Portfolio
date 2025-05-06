@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Gradient for peach colors -->
+    <linearGradient id="peachGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE5D4" />
+      <stop offset="50%" stop-color="#FFCBA4" />
+      <stop offset="100%" stop-color="#F9A97A" />
+    </linearGradient>
+    
+    <!-- Snow cap gradient -->
+    <linearGradient id="snowGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F9F9F9" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Base Mountain -->
+  <path d="M10,90 L50,20 L90,90 Z" fill="url(#peachGradient)" stroke="#F9A97A" stroke-width="1" />
+  
+  <!-- Snow Cap -->
+  <path d="M40,40 L50,20 L60,40 L55,45 L50,38 L45,45 Z" fill="url(#snowGradient)" stroke="#F9F9F9" stroke-width="0.5" />
+  
+  <!-- Mountain Ridges -->
+  <path d="M20,70 L30,60 L40,65 L50,55 L60,65 L70,60 L80,70" fill="none" stroke="#F9A97A" stroke-width="1" stroke-opacity="0.7" />
+  
+  <!-- Small decorative elements -->
+  <circle cx="50" cy="15" r="3" fill="#FFFFFF" />
+  <circle cx="30" cy="65" r="1" fill="#FFFFFF" opacity="0.7" />
+  <circle cx="70" cy="65" r="1" fill="#FFFFFF" opacity="0.7" />
+  <circle cx="50" cy="50" r="1" fill="#FFFFFF" opacity="0.7" />
+</svg>

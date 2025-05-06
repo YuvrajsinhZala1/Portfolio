@@ -1,0 +1,541 @@
+/* 
+ * Dark Mode Styles for Portfolio - Enhanced Purple Theme
+ * These styles will be applied when the dark mode is toggled
+ */
+
+/* Special background styles for dark mode */
+body.dark-mode {
+    background-image: 
+        radial-gradient(circle at 80% 20%, rgba(183, 122, 255, 0.08) 0%, transparent 50%), 
+        radial-gradient(circle at 20% 80%, rgba(230, 134, 255, 0.08) 0%, transparent 50%);
+}
+
+/* Dark Mode Variables */
+body.dark-mode {
+    /* Dark purple color palette - Enhanced */
+    --purple-lightest: #201634;
+    --purple-light: #412F71;
+    --purple-medium: #5F38CC;
+    --purple-dark: #7B50FF;
+    --purple-deepest: #A77DFF;
+    
+    /* Accent Colors - Brighter for better contrast */
+    --purple-accent: #CE78FF;
+    --pink-accent: #FF7ED9;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, var(--purple-dark), var(--purple-accent));
+    --gradient-accent: linear-gradient(135deg, var(--purple-accent), var(--pink-accent));
+    
+    /* Background colors - softer dark mode */
+    --white: #201634;
+    --off-white: #2E2052;
+    --light-gray: #412F71;
+    --mid-gray: #614C94;
+    
+    /* Light text colors - higher contrast for readability */
+    --text-dark: #F5EEFF;
+    --text-medium: #D7C6FF;
+    --text-light: #B4A0DA;
+}
+
+/* General Dark Mode Styles */
+body.dark-mode {
+    background-color: var(--white);
+    color: var(--text-dark);
+}
+
+/* Header Dark Mode */
+body.dark-mode header {
+    background-color: rgba(32, 22, 52, 0.9);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo in Dark Mode */
+body.dark-mode .logo h1 {
+    color: var(--purple-dark);
+}
+
+/* Mountain Background in Dark Mode */
+body.dark-mode .mountain-background {
+    opacity: 0.18;
+    filter: brightness(0.8) hue-rotate(-20deg);
+}
+
+/* Gujarat Element in Dark Mode */
+body.dark-mode .gujarat-element {
+    filter: hue-rotate(310deg) brightness(1.7);
+}
+
+/* Nav links in Dark Mode */
+body.dark-mode .nav-links a {
+    color: var(--text-medium);
+}
+
+body.dark-mode .nav-links a:hover,
+body.dark-mode .nav-links a.active {
+    color: var(--purple-dark);
+}
+
+/* Mobile menu button in Dark Mode */
+body.dark-mode .mobile-menu-btn {
+    color: var(--purple-dark);
+}
+
+/* Mobile menu in dark mode */
+body.dark-mode .nav-links.mobile-active {
+    background-color: var(--off-white);
+}
+
+/* Hero section in Dark Mode */
+body.dark-mode .hero-text h1 {
+    color: var(--purple-dark);
+}
+
+body.dark-mode .hero-text h2 {
+    color: var(--purple-accent);
+}
+
+/* Buttons in Dark Mode */
+body.dark-mode .btn.primary-btn {
+    background: var(--gradient-primary);
+    box-shadow: 0 0 12px rgba(123, 80, 255, 0.3);
+}
+
+body.dark-mode .btn.primary-btn:hover {
+    box-shadow: 0 0 18px rgba(123, 80, 255, 0.5);
+}
+
+body.dark-mode .btn.secondary-btn {
+    border-color: var(--purple-medium);
+    color: var(--purple-dark);
+}
+
+body.dark-mode .btn.secondary-btn:hover {
+    color: var(--white);
+}
+
+body.dark-mode .btn.secondary-btn::before {
+    background: var(--gradient-primary);
+}
+
+body.dark-mode .btn.accent-btn {
+    border-color: var(--pink-accent);
+    color: var(--pink-accent);
+}
+
+body.dark-mode .btn.accent-btn:hover {
+    color: var(--white);
+}
+
+body.dark-mode .btn.accent-btn::before {
+    background: var(--gradient-accent);
+}
+
+/* Section headers in Dark Mode */
+body.dark-mode .section-header h2 {
+    color: var(--purple-dark);
+}
+
+body.dark-mode .section-header h2:after {
+    background: var(--gradient-primary);
+    box-shadow: 0 0 12px rgba(123, 80, 255, 0.3);
+}
+
+body.dark-mode .section-header p {
+    color: var(--text-medium);
+}
+
+/* About section in Dark Mode */
+body.dark-mode .trait {
+    background-color: var(--off-white);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    border-top-color: var(--purple-medium);
+}
+
+body.dark-mode .trait:hover {
+    box-shadow: 0 0 18px rgba(123, 80, 255, 0.3);
+    border-top-color: var(--purple-accent);
+}
+
+body.dark-mode .trait h3 {
+    color: var(--purple-dark);
+}
+
+body.dark-mode .trait i {
+    color: var(--purple-dark);
+}
+
+body.dark-mode .trait:hover i {
+    color: var(--purple-accent);
+}
+
+body.dark-mode .trait p {
+    color: var(--text-medium);
+}
+
+/* Skills section in Dark Mode */
+body.dark-mode .skill-category h3 {
+    color: var(--purple-dark);
+}
+
+body.dark-mode .skill-category h3::after {
+    background: var(--gradient-primary);
+    box-shadow: 0 0 12px rgba(123, 80, 255, 0.3);
+}
+
+body.dark-mode .skill-item {
+    background-color: var(--off-white);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+body.dark-mode .skill-item:hover {
+    box-shadow: 0 0 18px rgba(123, 80, 255, 0.3);
+    border-left-color: var(--purple-medium);
+}
+
+body.dark-mode .skill-item h4 {
+    color: var(--text-dark);
+}
+
+body.dark-mode .skill-icon {
+    color: var(--purple-dark);
+}
+
+body.dark-mode .skill-item:hover .skill-icon {
+    color: var(--purple-accent);
+}
+
+body.dark-mode .progress-bar {
+    background-color: var(--light-gray);
+}
+
+body.dark-mode .progress {
+    background: var(--gradient-primary);
+    box-shadow: 0 0 12px rgba(123, 80, 255, 0.3);
+}
+
+/* Project filter buttons in Dark Mode */
+body.dark-mode .project-filter-btn {
+    background-color: var(--off-white);
+    color: var(--text-medium);
+    border: 1px solid var(--light-gray);
+}
+
+body.dark-mode .project-filter-btn:hover,
+body.dark-mode .project-filter-btn.active {
+    background-color: var(--purple-dark);
+    color: var(--white);
+    border-color: var(--purple-dark);
+}
+
+/* Projects section in Dark Mode */
+body.dark-mode .project-card {
+    background-color: var(--off-white);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+body.dark-mode .project-card:hover {
+    box-shadow: 0 0 20px rgba(123, 80, 255, 0.3);
+    border-bottom-color: var(--purple-accent);
+}
+
+body.dark-mode .project-img {
+    background: linear-gradient(120deg, var(--purple-dark), var(--purple-accent));
+}
+
+body.dark-mode .project-info h3 {
+    color: var(--purple-dark);
+}
+
+body.dark-mode .project-info p {
+    color: var(--text-medium);
+}
+
+body.dark-mode .project-tags span {
+    background-color: rgba(123, 80, 255, 0.15);
+    color: var(--purple-dark);
+}
+
+body.dark-mode .project-tags span:hover {
+    background-color: var(--purple-dark);
+    color: var(--white);
+}
+
+body.dark-mode .project-links a {
+    background-color: var(--light-gray);
+    color: var(--purple-dark);
+}
+
+body.dark-mode .project-links a:hover {
+    background-color: var(--purple-dark);
+    color: var(--white);
+    box-shadow: 0 0 12px rgba(123, 80, 255, 0.3);
+}
+
+body.dark-mode .project-category {
+    background-color: var(--off-white);
+    color: var(--purple-dark);
+}
+
+/* Journey timeline in Dark Mode */
+body.dark-mode .mountain-path {
+    background: linear-gradient(to bottom, transparent, var(--purple-dark) 20%, var(--purple-accent) 50%, var(--purple-dark) 80%, transparent);
+    box-shadow: 0 0 12px rgba(123, 80, 255, 0.3);
+}
+
+body.dark-mode .milestone-icon {
+    background-color: var(--off-white);
+    border: 3px solid var(--purple-dark);
+    box-shadow: 0 0 12px rgba(123, 80, 255, 0.3);
+}
+
+body.dark-mode .milestone-icon i {
+    color: var(--purple-dark);
+}
+
+body.dark-mode .milestone-content {
+    background-color: var(--off-white);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    border-top-color: var(--purple-medium);
+}
+
+body.dark-mode .milestone-content::before {
+    border-color: transparent var(--off-white) transparent transparent;
+}
+
+body.dark-mode .timeline-milestone:nth-child(even) .milestone-content::before {
+    border-color: transparent transparent transparent var(--off-white);
+}
+
+body.dark-mode .timeline-milestone::before {
+    background-color: var(--purple-dark);
+    color: var(--white);
+    box-shadow: 0 0 12px rgba(123, 80, 255, 0.3);
+}
+
+body.dark-mode .milestone-content h3 {
+    color: var(--purple-dark);
+}
+
+body.dark-mode .milestone-content h4 {
+    color: var(--text-dark);
+}
+
+body.dark-mode .milestone-content p {
+    color: var(--text-medium);
+}
+
+body.dark-mode .milestone-content .project-tags span {
+    background-color: rgba(123, 80, 255, 0.15);
+    color: var(--purple-dark);
+}
+
+/* Contact section in Dark Mode */
+body.dark-mode .contact-method i {
+    color: var(--purple-dark);
+}
+
+body.dark-mode .contact-method:hover i {
+    color: var(--purple-accent);
+}
+
+body.dark-mode .contact-method h3 {
+    color: var(--purple-dark);
+}
+
+body.dark-mode .contact-method a {
+    color: var(--text-medium);
+}
+
+body.dark-mode .contact-method a:hover {
+    color: var(--purple-accent);
+}
+
+body.dark-mode .social-links a {
+    background-color: var(--light-gray);
+    color: var(--purple-dark);
+    box-shadow: 0 0 12px rgba(123, 80, 255, 0.2);
+}
+
+body.dark-mode .social-links a:hover {
+    background: var(--gradient-primary);
+    color: var(--white);
+    box-shadow: 0 0 18px rgba(123, 80, 255, 0.3);
+}
+
+body.dark-mode .form-group label {
+    color: var(--purple-dark);
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+    background-color: var(--light-gray);
+    border-color: var(--mid-gray);
+    color: var(--text-dark);
+}
+
+body.dark-mode .form-group input:focus,
+body.dark-mode .form-group textarea:focus {
+    border-color: var(--purple-dark);
+    box-shadow: 0 0 0 3px rgba(123, 80, 255, 0.2);
+    background-color: rgba(65, 47, 113, 0.8);
+}
+
+body.dark-mode .form-alert.success {
+    background-color: rgba(123, 80, 255, 0.1);
+    color: var(--purple-medium);
+    border: 1px solid rgba(123, 80, 255, 0.3);
+}
+
+body.dark-mode .form-alert.error {
+    background-color: rgba(255, 126, 217, 0.1);
+    color: var(--pink-accent);
+    border: 1px solid rgba(255, 126, 217, 0.3);
+}
+
+/* Footer in Dark Mode */
+body.dark-mode footer {
+    background-color: var(--off-white);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .footer-logo h2 {
+    color: var(--purple-dark);
+}
+
+body.dark-mode footer p {
+    color: var(--text-medium);
+}
+
+body.dark-mode footer .fa-heart {
+    color: var(--purple-accent);
+}
+
+/* Certifications in Dark Mode */
+body.dark-mode .certification-card {
+    background-color: var(--off-white);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+    border-left-color: var(--purple-dark);
+}
+
+body.dark-mode .certification-card:hover {
+    box-shadow: 0 0 18px rgba(123, 80, 255, 0.3);
+    border-left-color: var(--purple-accent);
+}
+
+body.dark-mode .certification-icon {
+    background-color: rgba(123, 80, 255, 0.15);
+}
+
+body.dark-mode .certification-icon i {
+    color: var(--purple-dark);
+}
+
+body.dark-mode .certification-card:hover .certification-icon i {
+    color: var(--purple-accent);
+}
+
+body.dark-mode .certification-content h3 {
+    color: var(--purple-dark);
+}
+
+/* Enhanced preloader in dark mode */
+body.dark-mode .preloader {
+    background-color: var(--white);
+}
+
+body.dark-mode .preloader-spinner-outer {
+    border-top-color: var(--purple-dark);
+}
+
+body.dark-mode .preloader-spinner-middle {
+    border-top-color: var(--purple-medium);
+}
+
+body.dark-mode .preloader-spinner-inner {
+    border-top-color: var(--purple-accent);
+}
+
+body.dark-mode .preloader-text h2 {
+    color: var(--purple-dark);
+}
+
+body.dark-mode .preloader-text p {
+    color: var(--text-medium);
+}
+
+body.dark-mode .preloader-progress {
+    background-color: var(--light-gray);
+}
+
+body.dark-mode .preloader-progress-bar {
+    background-color: var(--purple-dark);
+}
+
+/* Glow effects for buttons and interactive elements */
+body.dark-mode .btn.primary-btn,
+body.dark-mode .milestone-icon,
+body.dark-mode .social-links a {
+    box-shadow: 0 0 12px rgba(123, 80, 255, 0.3);
+}
+
+body.dark-mode .btn.primary-btn:hover,
+body.dark-mode .social-links a:hover {
+    box-shadow: 0 0 18px rgba(123, 80, 255, 0.5);
+}
+
+/* Subtle text glow for headings */
+body.dark-mode h1, 
+body.dark-mode h2,
+body.dark-mode h3 {
+    text-shadow: 0 0 12px rgba(123, 80, 255, 0.2);
+}
+
+/* Enhanced hover effects */
+body.dark-mode .nav-links a:hover,
+body.dark-mode .contact-method a:hover {
+    text-shadow: 0 0 10px rgba(123, 80, 255, 0.4);
+}
+
+/* Button hover effects in dark mode */
+body.dark-mode button[type="submit"] {
+    background: var(--gradient-primary);
+}
+
+body.dark-mode button[type="submit"]:hover {
+    box-shadow: 0 0 18px rgba(123, 80, 255, 0.5);
+}
+
+/* Project status in dark mode */
+body.dark-mode .project-status.completed {
+    background-color: var(--purple-dark);
+}
+
+body.dark-mode .project-status.in-progress {
+    background-color: var(--purple-accent);
+}
+
+/* Enhanced mobile menu in dark mode */
+body.dark-mode .mobile-menu-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+body.dark-mode .nav-links.mobile-active a {
+    color: var(--text-medium);
+}
+
+body.dark-mode .nav-links.mobile-active a:hover,
+body.dark-mode .nav-links.mobile-active a.active {
+    color: var(--purple-dark);
+}
+
+/* Skill level in dark mode */
+body.dark-mode .skill-level {
+    background-color: var(--purple-dark);
+}
+
+body.dark-mode .skill-level::before {
+    background-color: var(--pink-accent);
+}

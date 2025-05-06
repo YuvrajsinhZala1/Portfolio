@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+  <!-- Gujarat-inspired geometric pattern -->
+  <defs>
+    <!-- Gradient for peach colors -->
+    <linearGradient id="peachGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE5D4" />
+      <stop offset="50%" stop-color="#FFCBA4" />
+      <stop offset="100%" stop-color="#F9A97A" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="50" cy="50" r="45" fill="white" stroke="url(#peachGradient)" stroke-width="2" />
+  
+  <!-- Decorative elements -->
+  <path d="M50,10 L50,90" stroke="url(#peachGradient)" stroke-width="2" stroke-dasharray="2,3" />
+  <path d="M10,50 L90,50" stroke="url(#peachGradient)" stroke-width="2" stroke-dasharray="2,3" />
+  
+  <!-- Diagonal lines -->
+  <path d="M25,25 L75,75" stroke="url(#peachGradient)" stroke-width="2" stroke-dasharray="2,3" />
+  <path d="M75,25 L25,75" stroke="url(#peachGradient)" stroke-width="2" stroke-dasharray="2,3" />
+  
+  <!-- Inner decorative elements -->
+  <circle cx="50" cy="50" r="20" fill="none" stroke="url(#peachGradient)" stroke-width="1.5" />
+  
+  <!-- Small circles at intersections -->
+  <circle cx="50" cy="50" r="5" fill="url(#peachGradient)" />
+  <circle cx="50" cy="10" r="3" fill="url(#peachGradient)" />
+  <circle cx="50" cy="90" r="3" fill="url(#peachGradient)" />
+  <circle cx="10" cy="50" r="3" fill="url(#peachGradient)" />
+  <circle cx="90" cy="50" r="3" fill="url(#peachGradient)" />
+  <circle cx="25" cy="25" r="3" fill="url(#peachGradient)" />
+  <circle cx="75" cy="75" r="3" fill="url(#peachGradient)" />
+  <circle cx="75" cy="25" r="3" fill="url(#peachGradient)" />
+  <circle cx="25" cy="75" r="3" fill="url(#peachGradient)" />
+  
+  <!-- Decorative small elements -->
+  <path d="M50,30 L55,35 L50,40 L45,35 Z" fill="url(#peachGradient)" />
+  <path d="M50,60 L55,65 L50,70 L45,65 Z" fill="url(#peachGradient)" />
+  <path d="M30,50 L35,55 L40,50 L35,45 Z" fill="url(#peachGradient)" />
+  <path d="M60,50 L65,55 L70,50 L65,45 Z" fill="url(#peachGradient)" />
+</svg>

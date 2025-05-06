@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" preserveAspectRatio="none">
+  <!-- Far background mountain -->
+  <path d="M0,800 L0,500 L200,650 L400,450 L600,600 L800,350 L1000,500 L1200,400 L1200,800 Z" 
+        fill="#FFE5D4" opacity="0.3"/>
+  
+  <!-- Middle mountain -->
+  <path d="M0,800 L0,600 L300,700 L500,500 L700,650 L900,450 L1100,600 L1200,550 L1200,800 Z" 
+        fill="#FFCBA4" opacity="0.4"/>
+  
+  <!-- Foreground mountain -->
+  <path d="M0,800 L0,700 L200,750 L400,650 L600,720 L800,600 L1000,700 L1200,650 L1200,800 Z" 
+        fill="#F9A97A" opacity="0.5"/>
+</svg>

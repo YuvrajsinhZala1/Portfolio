@@ -1,0 +1,149 @@
+/* Page Navigation Dots */
+.page-navigation {
+    position: fixed;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+.page-navigation ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.page-navigation .nav-dot {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.6);
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Tooltip styles */
+.page-navigation .tooltip {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--gradient-primary);
+    color: white;
+    padding: 6px 12px;
+    border-radius: var(--border-radius-small);
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-light);
+}
+
+.page-navigation .nav-dot:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    right: 25px;
+}
+
+.page-navigation .nav-dot::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 6px;
+    height: 6px;
+    background: var(--primary);
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.page-navigation .nav-dot:hover,
+.page-navigation .nav-dot.active {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 8px rgba(45, 70, 185, 0.4);
+}
+
+.page-navigation .nav-dot:hover::before,
+.page-navigation .nav-dot.active::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Active dot animation */
+@keyframes pulse-dot {
+    0% {
+        box-shadow: 0 0 0 0 rgba(45, 70, 185, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 6px rgba(45, 70, 185, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(45, 70, 185, 0);
+    }
+}
+
+.page-navigation .nav-dot.active {
+    animation: pulse-dot 2s infinite;
+}
+
+/* Dark mode styles */
+body.dark-mode .page-navigation .nav-dot {
+    background: rgba(35, 35, 40, 0.6);
+    border-color: var(--primary-teal);
+}
+
+body.dark-mode .page-navigation .tooltip {
+    background: var(--gradient-primary);
+    color: var(--off-white);
+}
+
+body.dark-mode .page-navigation .nav-dot::before {
+    background: var(--primary-teal);
+}
+
+body.dark-mode .page-navigation .nav-dot:hover,
+body.dark-mode .page-navigation .nav-dot.active {
+    background: rgba(35, 35, 40, 0.9);
+    box-shadow: 0 0 8px rgba(0, 184, 169, 0.5);
+}
+
+@keyframes pulse-dot-dark {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 184, 169, 0.5);
+    }
+    70% {
+        box-shadow: 0 0 0 6px rgba(0, 184, 169, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 184, 169, 0);
+    }
+}
+
+body.dark-mode .page-navigation .nav-dot.active {
+    animation: pulse-dot-dark 2s infinite;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .page-navigation {
+        right: 15px;
+    }
+    
+    .page-navigation .nav-dot {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .page-navigation {
+        display: none; /* Hide on very small screens */
+    }
+}
